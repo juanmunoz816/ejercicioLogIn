@@ -1,0 +1,121 @@
+:root{
+    --primary-color: #300a21;
+    --secundary-color: #7579ce;
+    --terciary-color: #7579ce85;
+    --S: 14px;
+    --M: 16px;
+    --L: 18px;
+}
+
+input,label,button{
+    display:block;
+}
+
+label{
+    margin-bottom: 4px;
+    font-size: var(--S);
+}
+
+input{
+    background: none;
+    border: 1px solid var(--secundary-color);
+    padding: 4px;
+    border-radius: 2px;
+    color: var(--secundary-color);
+}
+
+input::placeholder{
+    color: var(--terciary-color);
+}
+
+p, input, button{
+    font-size: var(--M);
+}
+
+h1, p{
+    text-align: center;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    position: relative;
+    
+}
+
+section{
+    border: 1px solid var(--secundary-color);
+    max-width: 370px;
+    padding: 24px;
+    border-radius: 14px;
+}
+
+figure{
+    display: flex;
+    background-color: red;
+}
+
+.text-input{
+    margin-bottom: 12px;
+}
+
+
+button{
+    background:none;
+    box-shadow: none;
+    border: 1px solid var(--secundary-color);
+    color: var(--secundary-color);
+    width: 100%;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+button:hover{
+    color: var(--primary-color);
+    background-color: var(--secundary-color);
+}
+
+.alerta{
+    position: absolute;
+    background: var(--secundary-color);
+    color: var(--primary-color);
+    padding: 24px;
+    left: 4px;
+    top: 4px;
+    border-radius: 14px;
+}
+
+.alerta .close{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.alerta .close:hover{
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+}
+
+.alerta h1, p{
+   text-align: start;
+}
+
+.oculto{
+    display: none;
+}
+
+.user{
+    padding: 8px 0;
+    border-bottom: solid var(--secundary-color) ;  
+    
+}
